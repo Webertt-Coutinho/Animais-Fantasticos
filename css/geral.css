@@ -16,6 +16,9 @@ body {
     background: #faf6ed;
     color: #222;
     -webkit-font-smoothing: antialiased;
+}
+
+.grid-container {
     display: grid;
     grid-template-columns: 1fr 120px minmax(300px, 800px) 1fr;
 }
@@ -39,7 +42,7 @@ body {
     margin-right: 10px;
     color: #222;
     text-decoration: none;
-    font-family: monospace;
+    font-family: 'IBM Plex Mono', monospace;
     font-weight: bold;
     text-transform: uppercase;
     font-size: 0.975rem;
@@ -67,7 +70,7 @@ body {
 }
 
 .animais h2 {
-    font-family: monospace;
+    font-family: 'IBM Plex Mono', monospace;
     font-size: 1rem;
     text-transform: uppercase;
     letter-spacing: .1em;
@@ -128,7 +131,7 @@ body {
 
 .faq-lista dt {
     font-size: 1.2rem;
-    font-family: monospace;
+    font-family: 'IBM Plex Mono', monospace;
     font-weight: bold;
     margin-top: 2rem;
     margin-bottom: .5rem;
@@ -180,7 +183,7 @@ body {
 
 .copy p {
     padding: 20px;
-    font-family: monospace;
+    font-family: 'IBM Plex Mono', monospace;
 }
 
 [data-tab="content"] section {
@@ -262,7 +265,7 @@ body {
 }
 
 @media (max-width: 700px) {
-    body {
+    .grid-container {
         grid-template-columns: 1fr;
     }
     .menu .grid-section .copy {
